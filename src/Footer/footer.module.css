@@ -1,0 +1,33 @@
+.footer {
+    background-color: #d4f0e5;
+    color: rgb(16, 15, 15);
+    text-align: center;
+    padding: 30px 15px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-icons i,
+  .social-icons i {
+    font-size: 24px;
+    margin: 10px 15px;
+    cursor: pointer;
+  }
+  
+  .footer-nav {
+    margin: 20px 0;
+  }
+  
+  .footernav a{
+    color: rgb(20, 16, 16);
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  
+  .footer-text {
+    font-size: 14px;
+    margin-top: 20px;
+    line-height: 1.5;
+  }
+ 

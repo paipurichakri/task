@@ -1,0 +1,16 @@
+  /* .header{
+    background-color: rgb(184, 217, 246);
+ }  */
+ .header ul li a{
+      font-weight: 700;
+      font-size: medium;
+      color: black;
+  }
+ul li{
+    margin-right: 50px;
+}
+  img{
+    height: 100px;
+    width: 100px;
+  }
+  
