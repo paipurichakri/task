@@ -9,7 +9,7 @@ const Serviceform = () => {
 
     const addservice=(e)=>{
         e.preventDefault();
-        axios.post("http://localhost:4000/service",{service,subservice,quantity,amount})
+        axios.post("https://food-order-system-backend.onrender.com/server",{service,subservice,quantity,amount})
         .then((res)=>{
            alert("service added suc...")
           //  setService("");

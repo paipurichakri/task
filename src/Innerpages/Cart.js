@@ -5,7 +5,7 @@ const Cart = () => {
   const [cartItems, setCartItems] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:4000/cart")
+    axios.get("https://food-order-system-backend.onrender.com/cart")
       .then((res) => setCartItems(res.data))
       .catch((err) => console.error("Failed to fetch cart items:", err));
   }, []);

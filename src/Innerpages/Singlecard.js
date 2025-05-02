@@ -9,7 +9,7 @@ const Singlecard = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get(`http://localhost:4000/subservice/${dservice}`)
+    axios.get(`https://food-order-system-backend.onrender.com/subservice/${dservice}`)
       .then((res) => {
         setData(res.data || []);
         setQuantities(Array((res.data || []).length).fill(0));
@@ -25,7 +25,7 @@ const Singlecard = () => {
     const item = data[index];
     const quantity = quantities[index];
     if (quantity > 0) {
-      axios.post("http://localhost:4000/cart", {
+      axios.post("https://food-order-system-backend.onrender.com/cart", {
         subservice: item.subservice,
         price: item.price,
         quantity,

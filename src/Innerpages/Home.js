@@ -49,7 +49,7 @@ const Home = () => {
   };
 
   useEffect(() => {
-    axios.get('http://localhost:4000/server')
+    axios.get('https://food-order-system-backend.onrender.com/server')
       .then((res) => setMeals(res.data))
       .catch((err) => console.log(err));
   }, []);

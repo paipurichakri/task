@@ -8,7 +8,7 @@ const Items = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get("http://localhost:4000/subservice")
+    axios.get("https://food-order-system-backend.onrender.com/subservice")
       .then((res) => {
         setData(res.data);
         setQuantities(Array(res.data.length).fill(0));
@@ -26,7 +26,7 @@ const Items = () => {
     if (qty === 0) return alert("Please increase quantity before adding to cart.");
 
     const payload = { serviceId: item._id, subservice: item.subservice, service: item.service, hotelname: item.hotelname, price: item.price, quantity: qty, totalPrice: item.price * qty, image: item.image };
-    axios.post("http://localhost:4000/cart", payload)
+    axios.post("https://food-order-system-backend.onrender.com/cart", payload)
       .then(() => {
         alert("Item added to cart!");
         navigate("/");
